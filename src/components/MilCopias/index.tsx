@@ -4,7 +4,7 @@ type Props = {
 
 export function MilCopias({ mono = false, className }: Props) {
   return (
-    <svg className={className} viewBox="0 0 185 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} viewBox="0 0 185 44" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mil Cópias">
       {mono ? (
         <>
           <path d="M47.5918 0.0400391V43.8682H0V0.0400391H47.5918ZM5.26562 5.2334V38.5908H14.5342V17.7422L21.4844 11.4893L14.5342 5.2334H5.26562ZM33.0645 5.2334L16.8457 19.8262L23.7959 26.082L33.0645 17.7422V38.5908H42.3262V5.2334H33.0645Z" fill="currentColor" />

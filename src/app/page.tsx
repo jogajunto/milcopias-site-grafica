@@ -49,7 +49,7 @@ export default async function Page() {
                     </Link>
                   </Button>
                 </div>
-                <Image className="relative -right-9 object-contain object-right transition-transform hover:rotate-6 sm:absolute sm:bottom-[10%] sm:h-[50%] sm:w-[55%]" src="/hand.webp" alt="" width={960} height={509} />
+                <Image className="relative -right-9 object-contain object-right transition-transform hover:rotate-6 sm:absolute sm:bottom-[10%] sm:h-[50%] sm:w-[55%]" src="/hand.webp" alt="Mão segurando o cartão de visita da Mil Cópias" width={960} height={509} />
               </div>
             </div>
           </div>
@@ -119,7 +119,7 @@ export default async function Page() {
           </div>
         </div>
 
-        <Image className="right-0 bottom-0 ml-auto md:absolute" src="/servicos.webp" alt="" width={310} height={300} />
+        <Image className="right-0 bottom-0 ml-auto md:absolute" src="/servicos.webp" alt="Cartão de visita da Mil Cópias" width={310} height={300} />
       </section>
 
       <section className="bg-secondary pt-24">
@@ -135,7 +135,7 @@ export default async function Page() {
               </Button>
             </div>
             <div>
-              <Image className="h-full object-contain object-bottom-right max-lg:pl-10" src="/cta.webp" alt="" width={768} height={370} />
+              <Image className="h-full object-contain object-bottom-right max-lg:pl-10" src="/cta.webp" alt="Mão segurando cartão de visita da Mil Cópias" width={768} height={370} />
             </div>
           </div>
         </div>

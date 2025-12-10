@@ -25,11 +25,12 @@ export default function GraficaRapida() {
 
   return (
     <div>
+      <h1 className="sr-only">Gráfica rápida em Linhares e região</h1>
       <div className="hidden items-end md:flex">
         {groups.map((g, i) => (
           <div key={i} className={`group relative ${i === 2 ? "-ml-[5px]" : ""}`} style={{ transform: `rotate(${g.rotate}deg)` }}>
-            <Image className={`h-auto ${g.big ? "max-h-[245px]" : "max-h-[185px]"} w-full transition-opacity duration-300 group-hover:opacity-0`} src={g.base} alt="" width={208} height={1085} />
-            <Image className={`absolute inset-0 h-auto ${g.big ? "max-h-[245px]" : "max-h-[185px]"} w-full opacity-0 transition-opacity duration-300 group-hover:opacity-100`} src={g.hover} alt="" width={208} height={1085} />
+            <Image className={`h-auto ${g.big ? "max-h-[245px]" : "max-h-[185px]"} w-full transition-opacity duration-300 group-hover:opacity-0`} src={g.base} alt="" aria-hidden width={208} height={1085} />
+            <Image className={`absolute inset-0 h-auto ${g.big ? "max-h-[245px]" : "max-h-[185px]"} w-full opacity-0 transition-opacity duration-300 group-hover:opacity-100`} src={g.hover} alt="" aria-hidden width={208} height={1085} />
           </div>
         ))}
       </div>
@@ -39,14 +40,14 @@ export default function GraficaRapida() {
           const isActive = i === active;
           return (
             <div key={i} className={`relative transition-all duration-500 ${i === 2 ? "-ml-[5px]" : ""}`} style={{ transform: `rotate(${g.rotate}deg)` }}>
-              <Image className={`h-auto ${g.big ? "max-h-[245px]" : "max-h-[185px]"} w-full transition-opacity duration-500 ${isActive ? "opacity-0" : "opacity-100"}`} src={g.base} alt="" width={208} height={1085} />
-              <Image className={`absolute inset-0 h-auto ${g.big ? "max-h-[245px]" : "max-h-[185px]"} w-full transition-opacity duration-500 ${isActive ? "opacity-100" : "opacity-0"}`} src={g.hover} alt="" width={208} height={1085} />
+              <Image className={`h-auto ${g.big ? "max-h-[245px]" : "max-h-[185px]"} w-full transition-opacity duration-500 ${isActive ? "opacity-0" : "opacity-100"}`} src={g.base} alt="" aria-hidden width={208} height={1085} />
+              <Image className={`absolute inset-0 h-auto ${g.big ? "max-h-[245px]" : "max-h-[185px]"} w-full transition-opacity duration-500 ${isActive ? "opacity-100" : "opacity-0"}`} src={g.hover} alt="" aria-hidden width={208} height={1085} />
             </div>
           );
         })}
       </div>
 
-      <Image className="-mt-4 rotate-[-5.77deg]" src="/rapida.svg" alt="" width={337} height={141} />
+      <Image className="-mt-4 rotate-[-5.77deg]" src="/rapida.svg" alt="" aria-hidden width={337} height={141} />
     </div>
   );
 }
