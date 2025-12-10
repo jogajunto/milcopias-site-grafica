@@ -12,8 +12,8 @@ import Link from "next/link";
 export function generateMetadata() {
   return createMetadata({
     path: "/",
-    title: "Mil Cópias Tecnologia | Aluguel de equipamentos e tecnologia",
-    description: "Soluções de outsourcing com aluguel de equipamentos e tecnologia sob demanda para o seu negócio reduzir custos operacionais e crescer com segurança.",
+    title: "Mil Cópias Gráfica Rápida | Atendimento em Linhares e região",
+    description: "Garantimos uma entrega ágil, qualidade consistente e soluções completas para materiais gráficos personalizados. Cartão de visita, banners e muito mais.",
   });
 }
 

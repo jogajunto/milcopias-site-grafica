@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // Páginas estáticas
   const sitemap: MetadataRoute.Sitemap = [
     {
       url: `${process.env.NEXT_PUBLIC_SITE_URL}`,
