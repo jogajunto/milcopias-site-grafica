@@ -1,10 +1,9 @@
 import Link from "next/link";
-import { Facebook, Instagram, LinkedIn } from "../SocialIcon";
+import { Facebook, Instagram } from "../SocialIcon";
 
 const SOCIALS = [
   { title: "Facebook", icon: Facebook, url: "https://www.facebook.com/milcopias/" },
   { title: "Instagram", icon: Instagram, url: "https://www.instagram.com/milcopias/" },
-  { title: "LinkedIn", icon: LinkedIn, url: "https://br.linkedin.com/company/mil-c%C3%B3pias" },
 ];
 
 export function Social() {
