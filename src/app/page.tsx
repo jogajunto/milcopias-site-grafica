@@ -21,15 +21,39 @@ export default async function Page() {
   const service = [
     {
       title: "Serviços de impressão, cópias e finalização de documentos",
-      list: ["Impressões e cópias a laser (coloridas ou P&B)", "Cópias, fax, scan", "Impressão A4/A3", "Plotagem de projetos", "Banners", "Lonas para placas", "Panfletos", "Apostilas", "Relatórios", "Formulários", "Impressos em geral", "Revelação de foto"],
+      list: [
+        "Apostilas",
+        "Banners",
+        "Blocos sem carbono",
+        "Calendários",
+        "Cardápios",
+        "Cartão de visita",
+        "Cartões de ponto",
+        "Convites em geral",
+        "Cópias e scan",
+        "Envelopes personalizados",
+        "Impressão A4/A3",
+        "Impressões e cópias a laser (coloridas ou P&B)",
+        "Impressos em geral",
+        "Lonas e backdrop",
+        "Marca página",
+        "Marcadores de mesa",
+        "Panfletos",
+        "Pasta reta",
+        "Plotagem de projetos",
+        "Receituários",
+        "Revelação de foto",
+        "Tags",
+        "Timbrados",
+      ],
     },
     {
       title: "Produção de peças gráficas, publicidade e comunicação visual",
-      list: ["Adesivos (refletivo, perfurado, leitoso e transparente)", "Blocos sem carbono", "Bolacha para CD (colorido)", "Calendários", "Cardápios", "Cartão de visita", "Cartões de ponto", "Convites em geral", "Envelopes personalizados", "Imãs", "Marca página", "Marcadores de mesa", "Pasta reta", "PVC adesivado", "Receituários", "Tags", "Timbrados"],
+      list: ["Adesivos (refletivo, perfurado, leitoso e transparente)", "Confecção de troféus e placas em acrílico", "Imãs", "Impressão de adesivos em alto relevo (DTF)", "PVC adesivado"],
     },
     {
       title: "Itens complementares, montagem e finalizações profissionais",
-      list: ["Acabamento", "Encadernação", "Plastificação", "Bolsa plástica", "Carimbos automáticos", "Cordões", "Crachás em PVC", "Suporte para banner", "Suporte para crachá", "Presilhas", "Gravação e/ou cópias de CD/DVD", "Tinta para carimbo"],
+      list: ["Acabamento", "Bolsa plástica", "Carimbos automáticos", "Cordões", "Crachás em PVC", "Encadernação", "Plastificação", "Presilhas", "Suporte para banner", "Suporte para crachá", "Tinta para carimbo"],
     },
   ];
 
@@ -165,8 +189,8 @@ export default async function Page() {
                 </li>
                 <li>
                   <Button variant="ghost" size="sm" asChild>
-                    <Link href="mailto:contato@milcopias.com.br" target="_blank" rel="noopener noreferrer">
-                      contato@milcopias.com.br
+                    <Link href="mailto:graficarapida@milcopias.com.br" target="_blank" rel="noopener noreferrer">
+                      graficarapida@milcopias.com.br
                     </Link>
                   </Button>
                 </li>
