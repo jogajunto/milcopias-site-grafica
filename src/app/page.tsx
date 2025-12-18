@@ -121,7 +121,7 @@ export default async function Page() {
             <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               <li className="col-span-2 space-y-4">
                 <h3 className="text-xl font-semibold">{service[0].title}</h3>
-                <ul className="columns-2 space-y-2">
+                <ul className="space-y-2 md:columns-2">
                   {service[0].list.map((item) => (
                     <li className="flex gap-2" key={item}>
                       <CheckCircle className="icon-brand-secondary size-5" />
