@@ -1,7 +1,9 @@
+import { withSentryConfig } from "@sentry/nextjs";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   turbopack: {},
+  productionBrowserSourceMaps: true,
   poweredByHeader: false,
   async headers() {
     return [
@@ -27,4 +29,8 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withSentryConfig(nextConfig, {
+  org: process.env.GLITCHTIP_ORG,
+  project: process.env.GLITCHTIP_PROJECT,
+  widenClientFileUpload: true,
+});
