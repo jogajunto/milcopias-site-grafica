@@ -33,4 +33,6 @@ export default withSentryConfig(nextConfig, {
   org: process.env.GLITCHTIP_ORG,
   project: process.env.GLITCHTIP_PROJECT,
   widenClientFileUpload: true,
+  authToken: process.env.GLITCHTIP_AUTH_TOKEN,
+  sentryUrl: process.env.GLITCHTIP_URL,
 });
