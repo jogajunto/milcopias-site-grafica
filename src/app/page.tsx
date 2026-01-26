@@ -1,14 +1,15 @@
-import { createMetadata } from "@/utilities/create-metadata";
-
-import { Button } from "@/components/Button";
-
-import GraficaRapida from "@/components/GraficaRapida";
-import { WhatsApp } from "@/components/SocialIcon";
-import { contactWhatsAppUrl, quoteWhatsAppUrl } from "@/utilities/generate-whatsapp-link";
-import { organizationSchema } from "@/utilities/schema";
-import { CheckCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
+import { CheckCircle } from "lucide-react";
+
+import { createMetadata } from "@/utilities/create-metadata";
+import { contactWhatsAppUrl, quoteWhatsAppUrl } from "@/utilities/generate-whatsapp-link";
+import { organizationSchema } from "@/utilities/schema";
+
+import { Button } from "@/components/Button";
+import GraficaRapida from "@/components/GraficaRapida";
+import { WhatsApp } from "@/components/SocialIcon";
 
 export function generateMetadata() {
   return createMetadata({
