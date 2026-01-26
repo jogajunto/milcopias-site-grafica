@@ -2,6 +2,7 @@ export const organizationSchema = () => {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://grafica.milcopias.com.br/#localbusiness",
     url: process.env.SITE_URL,
     logo: `${process.env.SITE_URL}/schema.png`,
     image: `${process.env.SITE_URL}/opengraph-image.png`,
@@ -22,5 +23,6 @@ export const organizationSchema = () => {
       name: "Mil Cópias",
       url: "https://milcopias.com.br/",
     },
+    sameAs: ["https://www.facebook.com/milcopias/", "https://www.instagram.com/milcopias/"],
   };
 };
