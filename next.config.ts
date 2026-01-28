@@ -32,12 +32,10 @@ const nextConfig: NextConfig = {
 export default withSentryConfig(nextConfig, {
   org: process.env.GLITCHTIP_ORG,
   project: process.env.GLITCHTIP_PROJECT,
-  // OTIMIZAÇÃO DE TEMPO: Não processa node_modules (Build rápido)
   widenClientFileUpload: false,
   authToken: process.env.GLITCHTIP_AUTH_TOKEN,
   sentryUrl: process.env.GLITCHTIP_URL,
   sourcemaps: {
-    // OTIMIZAÇÃO DE ESPAÇO: Limpa os mapas do container após o upload
     deleteSourcemapsAfterUpload: true,
   },
   telemetry: false,
